@@ -36,6 +36,8 @@ public class Professor implements Serializable {
     private String usuari;
     @Column(name = "NOM")
     private String nom;
+    @Column(name = "CONTRASSENYA")
+    private String contrasenya;
     @ManyToMany(mappedBy = "professorList")
     private List<Classe> classeList;
     @OneToMany(mappedBy = "professor")
@@ -66,6 +68,15 @@ public class Professor implements Serializable {
         this.nom = nom;
     }
 
+    public String getContrasenya() {
+        return contrasenya;
+    }
+
+    public void setContrasenya(String contrasenya) {
+        this.contrasenya = contrasenya;
+    }
+
+    
     public List<Classe> getClasseList() {
         return classeList;
     }
