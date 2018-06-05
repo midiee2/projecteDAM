@@ -52,7 +52,6 @@ public class FXMLAfegirAlumne implements Initializable {
     @FXML
     private void afegir(ActionEvent event) throws IOException {
         if (!tf_dni.getText().equals("") && !tf_nom.getText().equals("")) {
-            
             Alumne a = new Alumne(tf_dni.getText());
             a.setNom(tf_nom.getText());
             a.setClasse((Classe)cb_classe.getSelectionModel().getSelectedItem());
@@ -70,6 +69,7 @@ public class FXMLAfegirAlumne implements Initializable {
     public void esborrador(){
         tf_dni.clear();
         tf_nom.clear();
+        cb_classe.setValue(null);
     }
 
     @Override

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="350.0" prefWidth="488.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="64.0" layoutY="47.0" text="Usuari:" />
+      <TextField fx:id="tf_usuari" layoutX="176.0" layoutY="42.0" />
+      <Label layoutX="68.0" layoutY="92.0" text="Nom:" />
+      <TextField fx:id="tf_nom" layoutX="176.0" layoutY="85.0" />
+      <Label layoutX="63.0" layoutY="211.0" text="Assignatures:" />
+      <Label layoutX="68.0" layoutY="148.0" text="Classes:" />
+      <ChoiceBox fx:id="cb_classe" layoutX="179.0" layoutY="141.0" prefHeight="25.0" prefWidth="171.0" />
+      <ChoiceBox fx:id="cb_assignatura" layoutX="183.0" layoutY="206.0" prefHeight="25.0" prefWidth="171.0" />
+      <Button fx:id="b_afegir" layoutX="133.0" layoutY="285.0" mnemonicParsing="false" onAction="#afegir" text="Afegir" />
+      <Button fx:id="b_esborrar" layoutX="260.0" layoutY="287.0" mnemonicParsing="false" onAction="#esborrar" text="Esborrar" />
+   </children>
+</AnchorPane>

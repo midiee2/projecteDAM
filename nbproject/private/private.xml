@@ -3,7 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/DAM/programacio/DATABASETORREFORTA/src/databasetorreforta/domini/Classe.java</file>
+            <file>file:/E:/DAM/programacio/DATABASETORREFORTA/src/databasetorreforta/controlador/FXMLAfegirProfessor.java</file>
+            <file>file:/E:/DAM/programacio/DATABASETORREFORTA/src/databasetorreforta/controlador/FXMLEliminarAssignatura.java</file>
+            <file>file:/E:/DAM/programacio/DATABASETORREFORTA/src/databasetorreforta/controlador/FXMLinicialAdmin.java</file>
+            <file>file:/E:/DAM/programacio/DATABASETORREFORTA/src/databasetorreforta/controlador/FXMLModificarAssignatura.java</file>
+            <file>file:/E:/DAM/programacio/DATABASETORREFORTA/src/databasetorreforta/controlador/FXMLEliminarAlumne.java</file>
+            <file>file:/E:/DAM/programacio/DATABASETORREFORTA/src/databasetorreforta/controlador/FXMLModificarAlumne.java</file>
+            <file>file:/E:/DAM/programacio/DATABASETORREFORTA/src/databasetorreforta/controlador/FXMLAfegirAssignatura.java</file>
             <file>file:/E:/DAM/programacio/DATABASETORREFORTA/src/databasetorreforta/DATABASETORREFORTA.java</file>
             <file>file:/E:/DAM/programacio/DATABASETORREFORTA/src/databasetorreforta/controlador/FXMLAfegirAlumne.java</file>
         </group>

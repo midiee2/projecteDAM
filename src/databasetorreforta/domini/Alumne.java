@@ -92,7 +92,7 @@ public class Alumne implements Serializable {
 
     @Override
     public String toString() {
-        return "databasetorreforta.domini.Alumne[ dni=" + dni + " ]";
+        return dni;
     }
     
 }

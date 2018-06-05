@@ -15,22 +15,22 @@
                 <Menu mnemonicParsing="false" text="Alumnes">
                   <items>
                     <MenuItem mnemonicParsing="false" onAction="#afegirAlumne" text="Afegir alumne" />
-                        <MenuItem mnemonicParsing="false"  text="Modificar alumne" />
-                        <MenuItem mnemonicParsing="false"  text="Eliminar alumne" />
+                        <MenuItem mnemonicParsing="false" onAction="#modificarAlumne" text="Modificar alumne" />
+                        <MenuItem mnemonicParsing="false" onAction="#eliminarAlumne" text="Eliminar alumne" />
                   </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Professors">
                   <items>
-                    <MenuItem mnemonicParsing="false"  text="Afegir professor" />
-                        <MenuItem mnemonicParsing="false"  text="Modificar professor" />
-                        <MenuItem mnemonicParsing="false"  text="Eliminar professor" />
+                    <MenuItem mnemonicParsing="false" text="Afegir professor" />
+                        <MenuItem mnemonicParsing="false" text="Modificar professor" />
+                        <MenuItem mnemonicParsing="false" text="Eliminar professor" />
                   </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Assignatures">
                   <items>
-                    <MenuItem mnemonicParsing="false"  text="Afegir assignatura" />
-                        <MenuItem mnemonicParsing="false"  text="Modificar assignatura" />
-                        <MenuItem mnemonicParsing="false"  text="Eliminar assignatura" />
+                    <MenuItem mnemonicParsing="false" onAction="#afegirAssignatura" text="Afegir assignatura" />
+                        <MenuItem mnemonicParsing="false" onAction="#modificarAssignatura" text="Modificar assignatura" />
+                        <MenuItem mnemonicParsing="false" onAction="#eliminarAssignatura" text="Eliminar assignatura" />
                   </items>
                 </Menu>
               </menus>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="335.0" prefWidth="474.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="52.0" layoutY="111.0" text="Nom assignatura:" />
+      <Label layoutX="52.0" layoutY="154.0" text="Classe:" />
+      <Button fx:id="b_eliminar" layoutX="137.0" layoutY="241.0" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
+      <Button fx:id="b_esborrar" layoutX="261.0" layoutY="245.0" mnemonicParsing="false" onAction="#esborrar" text="Esborrar" />
+      <Label layoutX="39.0" layoutY="41.0" text="Selecciona assignatura:" />
+      <ComboBox fx:id="cb_assignatura" layoutX="227.0" layoutY="35.0" onAction="#combobox" prefHeight="25.0" prefWidth="204.0" />
+      <Text fx:id="text_ass" layoutX="214.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="text_class" layoutX="226.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Label fx:id="resposta" layoutX="153.0" layoutY="198.0" />
+   </children>
+</AnchorPane>

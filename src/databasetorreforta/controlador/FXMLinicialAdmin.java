@@ -42,39 +42,36 @@ public class FXMLinicialAdmin implements Initializable{
         panel1.getChildren().add(pNou);
     }
 
-//    @FXML
-//    private void afegirProfessor(ActionEvent event) throws IOException {
-////        FXMLLoader fxmlAdmin = new FXMLLoader(TorrefortaDB.class.getResource("admin/FXMLafegirProfessor.fxml"));
-////        FXMLAfegirProfessor controlador = new FXMLAfegirProfessor();
-////        controlador.assignaModel(model);
-////        fxmlAdmin.setController(controlador);
-////        AnchorPane pNou = fxmlAdmin.load();
-////        panel1.getChildren().clear();
-////        panel1.getChildren().add(pNou);
-//    }
-//
-//    @FXML
-//    private void afegirAssignatura(ActionEvent event) throws IOException {
-//        FXMLLoader fxmlAdmin = new FXMLLoader(TorrefortaDB.class.getResource("admin/FXMLafegirAssignatura.fxml"));
-//        FXMLAfegirAssignatura controlador = new FXMLAfegirAssignatura();
-//        controlador.assignaModel(model);
-//        fxmlAdmin.setController(controlador);
-//        AnchorPane pNou = fxmlAdmin.load();
-//        panel1.getChildren().clear();
-//        panel1.getChildren().add(pNou);
-//    }
-//
-//    @FXML
-//    private void modificarAlumne(ActionEvent event) throws IOException {
-//        FXMLLoader fxmlAdmin = new FXMLLoader(TorrefortaDB.class.getResource("admin/FXMLmodificarAlumne.fxml"));
-//        FXMLModificarAlumne controlador = new FXMLModificarAlumne();
-//        controlador.assignaModel(model);
-//        fxmlAdmin.setController(controlador);
-//        AnchorPane pNou = fxmlAdmin.load();
-//        panel1.getChildren().clear();
-//        panel1.getChildren().add(pNou);
-//    }
-//
+    @FXML
+    private void afegirProfessor(ActionEvent event) throws IOException {
+        FXMLLoader fxmlAdmin = new FXMLLoader(DATABASETORREFORTA.class.getResource("vista/FXMLafegirProfessor.fxml"));
+        FXMLAfegirProfessor controlador = new FXMLAfegirProfessor();     
+        fxmlAdmin.setController(controlador);
+        AnchorPane pNou = fxmlAdmin.load();
+        panel1.getChildren().clear();
+        panel1.getChildren().add(pNou);
+    }
+
+    @FXML
+    private void afegirAssignatura(ActionEvent event) throws IOException {
+        FXMLLoader fxmlAdmin = new FXMLLoader(DATABASETORREFORTA.class.getResource("vista/FXMLafegirAssignatura.fxml"));
+        FXMLAfegirAssignatura controlador = new FXMLAfegirAssignatura();     
+        fxmlAdmin.setController(controlador);
+        AnchorPane pNou = fxmlAdmin.load();
+        panel1.getChildren().clear();
+        panel1.getChildren().add(pNou);
+    }
+
+    @FXML
+    private void modificarAlumne(ActionEvent event) throws IOException {
+        FXMLLoader fxmlAdmin = new FXMLLoader(DATABASETORREFORTA.class.getResource("vista/FXMLmodificarAlumne.fxml"));
+        FXMLModificarAlumne controlador = new FXMLModificarAlumne();     
+        fxmlAdmin.setController(controlador);
+        AnchorPane pNou = fxmlAdmin.load();
+        panel1.getChildren().clear();
+        panel1.getChildren().add(pNou);
+    }
+
 //    @FXML
 //    private void modificarProfessor(ActionEvent event) throws IOException {
 //        FXMLLoader fxmlAdmin = new FXMLLoader(TorrefortaDB.class.getResource("admin/FXMLmodificarProfessor.fxml"));
@@ -85,29 +82,27 @@ public class FXMLinicialAdmin implements Initializable{
 //        panel1.getChildren().clear();
 //        panel1.getChildren().add(pNou);
 //    }
-//
-//    @FXML
-//    private void modificarAssignatura(ActionEvent event) throws IOException {
-//        FXMLLoader fxmlAdmin = new FXMLLoader(TorrefortaDB.class.getResource("admin/FXMLmodificarAssignatura.fxml"));
-//        FXMLModificarAssignatura controlador = new FXMLModificarAssignatura();
-//        controlador.assignaModel(model);
-//        fxmlAdmin.setController(controlador);
-//        AnchorPane pNou = fxmlAdmin.load();
-//        panel1.getChildren().clear();
-//        panel1.getChildren().add(pNou);
-//    }
-//
-//    @FXML
-//    private void eliminarAlumne(ActionEvent event) throws IOException {
-//        FXMLLoader fxmlAdmin = new FXMLLoader(TorrefortaDB.class.getResource("admin/FXMLeliminarAlumne.fxml"));
-//        FXMLEliminarAlumne controlador = new FXMLEliminarAlumne();
-//        controlador.assignaModel(model);
-//        fxmlAdmin.setController(controlador);
-//        AnchorPane pNou = fxmlAdmin.load();
-//        panel1.getChildren().clear();
-//        panel1.getChildren().add(pNou);
-//    }
-//
+
+    @FXML
+    private void modificarAssignatura(ActionEvent event) throws IOException {
+        FXMLLoader fxmlAdmin = new FXMLLoader(DATABASETORREFORTA.class.getResource("vista/FXMLmodificarAssignatura.fxml"));
+        FXMLModificarAssignatura controlador = new FXMLModificarAssignatura();     
+        fxmlAdmin.setController(controlador);
+        AnchorPane pNou = fxmlAdmin.load();
+        panel1.getChildren().clear();
+        panel1.getChildren().add(pNou);
+    }
+
+    @FXML
+    private void eliminarAlumne(ActionEvent event) throws IOException {
+        FXMLLoader fxmlAdmin = new FXMLLoader(DATABASETORREFORTA.class.getResource("vista/FXMLeliminarAlumne.fxml"));
+        FXMLEliminarAlumne controlador = new FXMLEliminarAlumne();     
+        fxmlAdmin.setController(controlador);
+        AnchorPane pNou = fxmlAdmin.load();
+        panel1.getChildren().clear();
+        panel1.getChildren().add(pNou);
+    }
+
 //    @FXML
 //    private void eliminarProfessor(ActionEvent event) throws IOException {
 //        FXMLLoader fxmlAdmin = new FXMLLoader(TorrefortaDB.class.getResource("admin/FXMLeliminarProfessor.fxml"));
@@ -118,16 +113,16 @@ public class FXMLinicialAdmin implements Initializable{
 //        panel1.getChildren().clear();
 //        panel1.getChildren().add(pNou);
 //    }
-//     @FXML
-//    private void eliminarAssignatura(ActionEvent event) throws IOException {
-//        FXMLLoader fxmlAdmin = new FXMLLoader(TorrefortaDB.class.getResource("admin/FXMLeliminarAssignatura.fxml"));
-//        FXMLEliminarAssignatura controlador = new FXMLEliminarAssignatura();
-//        controlador.assignaModel(model);
-//        fxmlAdmin.setController(controlador);
-//        AnchorPane pNou = fxmlAdmin.load();
-//        panel1.getChildren().clear();
-//        panel1.getChildren().add(pNou);
-//    }
+    
+     @FXML
+    private void eliminarAssignatura(ActionEvent event) throws IOException {
+        FXMLLoader fxmlAdmin = new FXMLLoader(DATABASETORREFORTA.class.getResource("vista/FXMLeliminarAssignatura.fxml"));
+        FXMLEliminarAssignatura controlador = new FXMLEliminarAssignatura();     
+        fxmlAdmin.setController(controlador);
+        AnchorPane pNou = fxmlAdmin.load();
+        panel1.getChildren().clear();
+        panel1.getChildren().add(pNou);
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {

@@ -6,10 +6,12 @@
 package databasetorreforta.domini;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
@@ -41,7 +43,7 @@ public class Assignatura implements Serializable {
     @JoinTable(name = "CLASSEASSIGNATURA", joinColumns = {
         @JoinColumn(name = "ASSIGNATURA", referencedColumnName = "ID")}, inverseJoinColumns = {
         @JoinColumn(name = "CLASSE", referencedColumnName = "ID")})
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     private List<Classe> classeList;
     @JoinColumn(name = "PROFESSOR", referencedColumnName = "USUARI")
     @ManyToOne
@@ -52,6 +54,7 @@ public class Assignatura implements Serializable {
 
     public Assignatura(String id) {
         this.id = id;
+        classeList = new ArrayList<>();
     }
 
     public String getId() {
@@ -108,7 +111,7 @@ public class Assignatura implements Serializable {
 
     @Override
     public String toString() {
-        return "databasetorreforta.domini.Assignatura[ id=" + id + " ]";
+        return nom;
     }
     
 }
