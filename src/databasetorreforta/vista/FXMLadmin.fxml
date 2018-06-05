@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="541.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="545.0" prefWidth="694.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="Alumnes">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#afegirAlumne" text="Afegir alumne" />
+                        <MenuItem mnemonicParsing="false"  text="Modificar alumne" />
+                        <MenuItem mnemonicParsing="false"  text="Eliminar alumne" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Professors">
+                  <items>
+                    <MenuItem mnemonicParsing="false"  text="Afegir professor" />
+                        <MenuItem mnemonicParsing="false"  text="Modificar professor" />
+                        <MenuItem mnemonicParsing="false"  text="Eliminar professor" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Assignatures">
+                  <items>
+                    <MenuItem mnemonicParsing="false"  text="Afegir assignatura" />
+                        <MenuItem mnemonicParsing="false"  text="Modificar assignatura" />
+                        <MenuItem mnemonicParsing="false"  text="Eliminar assignatura" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <AnchorPane fx:id="panel1" prefHeight="510.0" prefWidth="694.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

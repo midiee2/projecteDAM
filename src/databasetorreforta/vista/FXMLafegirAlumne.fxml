@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="292.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="47.0" layoutY="70.0" text="DNI: " />
+      <Label layoutX="45.0" layoutY="123.0" text="Nom i Cognoms: " />
+      <TextField fx:id="tf_dni" layoutX="170.0" layoutY="65.0" prefHeight="25.0" prefWidth="181.0" />
+      <TextField fx:id="tf_nom" layoutX="169.0" layoutY="116.0" prefHeight="25.0" prefWidth="181.0" />
+      <Label layoutX="44.0" layoutY="165.0" text="Classe: " />
+      <ComboBox fx:id="cb_classe" layoutX="169.0" layoutY="168.0" prefHeight="25.0" prefWidth="181.0" />
+      <Button fx:id="b_afegir" layoutX="121.0" layoutY="236.0" mnemonicParsing="false" onAction="#afegir" text="Afegir" />
+      <Button fx:id="b_esborrar" layoutX="244.0" layoutY="236.0" mnemonicParsing="false" onAction="#esborrar" text="Esborrar" />
+      <Label fx:id="resultat" layoutX="379.0" layoutY="69.0" textFill="#180ada" />
+   </children>
+</AnchorPane>
